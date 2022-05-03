@@ -2,11 +2,9 @@
 // Make me compile and run without error !
 // `rustlings hint move_semantics8` for hints
 
-// I AM NOT DONE
-
 fn non_null_ref(/**/ mut /**/ v: &i32) -> &i32 {
     if *v == 0 {
-        let b = 1;
+        let b = &1;
         v = &b;
     }
     v // don't change this line
